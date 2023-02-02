@@ -11,11 +11,11 @@
  */
 public class Lab {
     /**
-     * @param arr the array we're getting data from.
+     * @param arr is the array we're getting data from.
      * @return the length of arr.
      */
     public int getLengthOfArray(int[] arr){
-        return 0;
+        return arr.length;
     }
 
 
@@ -27,7 +27,7 @@ public class Lab {
      * @return the element at index n of arr.
      */
     public int getNthElementOfArray(int[] arr, int n){
-        return 0;
+        return arr[n];
     }
 
     /**
@@ -36,10 +36,11 @@ public class Lab {
      * @param n the index (number) of the element we're looking to modify.
      *          Indexes in arrays start counting from zero.
      * @param val the value that we will assign to a spot in the array.
+     * // for me - assign val for the nth position in the array
      * @return nothing. Because of pass-by-reference, any change to the array will be reflected across our java program.
      */
     public void setNthElementOfArray(int[] arr, int n, int val){
-
+        arr[n] = val;
     }
 
     /**
@@ -47,6 +48,7 @@ public class Lab {
      * @return a new int array that can contain n elements.
      */
     public int[] returnNewArraySizeN(int n){
-        return null;
+        int[] intArray = new int[n];
+        return intArray;
     }
 }
